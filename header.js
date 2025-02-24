@@ -1,4 +1,9 @@
 function loadHeader() {
+    addHeaderHTML();
+    addScrollListener();
+}
+
+function addHeaderHTML() {
     const headerHTML = `
 <header class="header">
     <input type="checkbox" id="checkbox">
@@ -26,25 +31,26 @@ function loadHeader() {
     </section>
 </header>
     `;
-    
-    // Adiciona o header no início do body
     document.body.insertAdjacentHTML('afterbegin', headerHTML);
+}
 
-    // Adiciona o listener de scroll para alterar o tamanho do header e trocar a logo
+function addScrollListener() {
     window.addEventListener('scroll', () => {
         const header = document.querySelector('.header');
         const logo = header.querySelector('.logo');
+        // Use guard clauses to update based on scrollY value
         if (window.scrollY > 290) {
-            header.classList.add('shrink');
-            document.body.classList.add('solid-bg');
-            if (logo) logo.src = '/assets/logo-pequena-sem-fundo.png';
+            updateHeaderAndLogo(header, logo, '/assets/logo-pequena-sem-fundo.png', true);
         } else {
-            header.classList.remove('shrink');
-            document.body.classList.remove('solid-bg');
-            if (logo) logo.src = '/assets/logo-sem-fundo.png';
+            updateHeaderAndLogo(header, logo, '/assets/logo-sem-fundo.png', false);
         }
     });
 }
 
-// Chama a função assim que o DOM estiver pronto
+function updateHeaderAndLogo(header, logo, logoSrc, isScrolled) {
+    header.classList.toggle('shrink', isScrolled);
+    document.body.classList.toggle('solid-bg', isScrolled);
+    if (logo) logo.src = logoSrc;
+}
+
 document.addEventListener('DOMContentLoaded', loadHeader);
