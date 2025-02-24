@@ -1,0 +1,68 @@
+.header {
+    transition: all 0.3s ease;
+    background: linear-gradient(45deg, var(--laranja), var(--dourado));
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.header img {
+    width: 400px;
+    height: 250px;
+    margin: 4rem auto;
+    position: absolute;
+    z-index: 90;
+}
+
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--branco);
+}
+
+.hero.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero-content {
+    animation: fadeInUp 2s;
+}
+
+
+/* Header normal */
+.header:not(.shrink) {
+    position: relative;
+    height: 400px;
+}
+/* Header reduzido e fixo */
+.header.shrink {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 9999;
+    background: #333;
+    display: flex;
+    justify-content: center;
+}
+/* Classe para trocar a imagem de fundo */
+.solid-bg .hero {
+    background-image: none !important;
+    background: none;
+    transition: background-color 0.5s ease;
+    min-height: unset;
+    padding: 0;
+}
+/* Logo menores quando header estiver fixo */
+.header.shrink .logo {
+    width: 250px;
+    height: unset;
+    margin: 0;
+    left: 10px;
+    top: 15px;
+    border-radius: unset;
+}
+
+.solid-bg {
+    position: relative;
+    top: 300px;
+}
