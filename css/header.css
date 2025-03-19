@@ -1,9 +1,27 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
     transition: all 0.3s ease;
     background: linear-gradient(45deg, var(--laranja), var(--dourado));
     text-align: left;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
+/* Estado expandido: antes de rolar */
+.header.expanded {
+    height: 400px;
+}
+
+.header.expanded .logo {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    margin: 4rem auto;
+}
+  
 .header img {
     width: 400px;
     height: 250px;
@@ -35,7 +53,6 @@
 }
 /* Header reduzido e fixo */
 .header.shrink {
-    position: sticky;
     top: 0;
     width: 100%;
     height: 100px;
@@ -55,7 +72,7 @@
 /* Logo menores quando header estiver fixo */
 .header.shrink .logo {
     width: 250px;
-    height: unset;
+    height: auto;
     margin: 0;
     left: 10px;
     top: 15px;
@@ -65,4 +82,9 @@
 .solid-bg {
     position: relative;
     top: 300px;
+}
+
+/* Espaço reservado para o header, garantindo que o conteúdo não suba */
+body {
+    padding-top: 400px; /* corresponde à altura do header.expandido */
 }
