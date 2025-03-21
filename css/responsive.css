@@ -1,71 +1,463 @@
-@media (max-width: 1200px) {
-    .container {
-        padding: 0 20px;
-    }
-    .features-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-    .services-showcase {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
+/* Mobile Responsiveness CSS */
+
+/* General Mobile Adjustments */
+@media (max-width: 767px) {
+  /* Typography adjustments for mobile */
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.75rem !important;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+  }
+
+  /* Layout adjustments */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  section {
+    padding: 2.5rem 0;
+  }
+
+  /* Button adjustments */
+  .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Spacing adjustments */
+  .gap-4, .gap-8 {
+    gap: 0.75rem;
+  }
+
+  /* Grid and flex adjustments */
+  .flex-col-mobile {
+    flex-direction: column !important;
+  }
+
+  .items-center-mobile {
+    align-items: center !important;
+  }
+
+  .justify-center-mobile {
+    justify-content: center !important;
+  }
+
+  .text-center-mobile {
+    text-align: center !important;
+  }
+
+  /* Header Mobile Adjustments */
+  .header-container {
+    padding: 0.75rem 0;
+    height: 100px;
+  }
+  
+  #header-container {
+    height: 130px;
+  }
+
+  .logo-title {
+    font-size: 1.5rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.65rem;
+  }
+
+  .logo-img-container {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .mobile-menu {
+    padding: 1rem;
+  }
+
+  .mobile-nav-list {
+    gap: 0.75rem;
+  }
+
+  /* Hero Section Mobile Adjustments */
+  .hero {
+    padding: 1.5rem 0 5rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem !important;
+  }
+
+  .hero-description {
+    font-size: 1rem !important;
+  }
+
+  .hero-sub-description {
+    font-size: 0.9rem !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero-features {
+    margin-top: 2rem;
+  }
+
+  .hero-feature {
+    padding: 1rem;
+  }
+
+  .hero-feature-title {
+    font-size: 1.1rem;
+  }
+
+  .hero-feature-description {
+    font-size: 0.9rem !important;
+  }
+
+  /* Services Section Mobile Adjustments */
+  .services-title {
+    font-size: 1.75rem !important;
+  }
+
+  .services-description {
+    font-size: 0.95rem !important;
+  }
+
+  .service-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem !important;
+  }
+
+  .service-feature {
+    margin-bottom: 0.5rem;
+  }
+
+  .service-feature-text {
+    font-size: 0.9rem !important;
+  }
+
+  .emergency-box {
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+  }
+
+  .emergency-content {
+    text-align: center;
+  }
+
+  .emergency-content a {
+    width: 100%;
+  }
+
+  .emergency-title {
+    font-size: 1.3rem;
+  }
+
+  .emergency-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* Problem Section Mobile Adjustments */
+  .problema-list-title {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+
+  .problema-item {
+    padding: 1rem;
+  }
+
+  .problema-title {
+    font-size: 1.1rem;
+  }
+
+  .problema-description {
+    font-size: 0.9rem !important;
+  }
+
+  .solucao {
+    padding: 1.5rem;
+  }
+
+  .solucao-title {
+    font-size: 1.3rem;
+  }
+
+  .solucao-button {
+    width: 100%;
+  }
+
+  /* Gallery Page Mobile Adjustments */
+  .gallery-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .gallery-tab {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .gallery-item {
+    margin-bottom: 1rem;
+  }
+
+  .gallery-item-image {
+    height: 200px;
+  }
+
+  .gallery-modal-content {
+    max-width: 95%;
+  }
+
+  .gallery-modal-close {
+    top: -1.5rem;
+    right: -1rem;
+  }
+
+  .gallery-modal-prev,
+  .gallery-modal-next {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-content {
+    font-size: 0.9rem !important;
+  }
+
+  /* Contact Page Mobile Adjustments */
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+
+  .contact-info-title {
+    font-size: 1.3rem;
+  }
+
+  .contact-form-title {
+    font-size: 1.3rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-label {
+    font-size: 0.95rem;
+  }
+
+  .form-control {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .map-container {
+    height: 250px;
+    margin-top: 2rem;
+  }
+
+  .business-hours {
+    padding: 1.5rem;
+  }
+
+  .business-hours-title {
+    font-size: 1.3rem;
+  }
+
+  /* About Page Mobile Adjustments */
+  .about-card {
+    margin-bottom: 2rem;
+  }
+
+  .about-card-title {
+    font-size: 1.3rem;
+  }
+
+  .about-image-container {
+    height: 200px;
+  }
+
+  .team-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .value-card {
+    padding: 1rem;
+  }
+
+  .value-title {
+    font-size: 1.1rem;
+  }
+
+  /* Call to Action Mobile Adjustments */
+  .cta-section {
+    padding: 2rem 0;
+  }
+
+  .cta-title {
+    font-size: 1.5rem !important;
+  }
+
+  .cta-text {
+    font-size: 0.95rem !important;
+  }
+
+  /* Footer Mobile Adjustments */
+  .footer-content {
+    padding: 2rem 0;
+  }
+  .footer-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer-heading {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-column {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-columm-logo {
+    width: auto;
+  }
+
+  .footer-bottom-content {
+    padding: 1rem 0;
+    flex-direction: column-reverse;
+  }
+
+  .footer-copyright,
+  .footer-credits {
+    font-size: 0.8rem;
+  }
+
+  /* Ralph mascot adjustments for mobile */
+  .ralph-container.ralph-large {
+    transform: scale(0.8);
+    margin: 0 auto;
+  }
+
+  /* WhatsApp button adjustment */
+  .whatsapp-float {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
 
-@media (max-width: 1024px) {
-    .services-showcase {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .about-content-grid {
-        grid-template-columns: 1fr;
-    }
-    .team-photos {
-        grid-template-columns: 1fr 1fr;
-    }
+/* Small mobile devices */
+@media (max-width: 375px) {
+  /* Even smaller text for very small devices */
+  h1 {
+    font-size: 1.75rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .logo-title {
+    font-size: 1.3rem;
+  }
+
+  .logo-subtitle {
+    font-size: 0.6rem;
+  }
+
+  .logo-img-container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Smaller buttons */
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Smaller Ralph */
+  .ralph-container.ralph-large {
+    transform: scale(0.7);
+  }
+
+  .ralph-container.ralph-medium {
+    transform: scale(0.8);
+  }
 }
 
-@media (max-width: 768px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-    h1 { font-size: 1.8rem; }
-    h2 { font-size: 1.5rem; }
-    h3 { font-size: 1.2rem; }
-    body {
-        font-size: 14px;
-    }
-    .hero-section {
-        text-align: center;
-    }
-    .hero-cta {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .features-grid, 
-    .services-showcase,
-    .team-photos,
-    .about-team-highlights,
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-    #dynamic-header .header-content {
-        flex-direction: column;
-        padding: 10px;
-    }
-    #dynamic-header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    #dynamic-header nav ul li {
-        margin: 10px 0;
-    }
+/* Tablet Adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Slightly smaller headings for tablets */
+  h1 {
+    font-size: 2.5rem;
+  }
 
+  h2 {
+    font-size: 2rem;
+  }
+
+  /* Adjust grid columns for tablets */
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Adjust service features and hero features for tablets */
+  .service-feature-text {
+    font-size: 0.9rem;
+  }
+
+  /* Ralph medium sizing for tablets */
+  .ralph-container.ralph-large {
+    transform: scale(0.9);
+  }
+
+  /* About page team member grid */
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-width: 480px) {
-    .service-card img,
-    .features-section .feature-item {
-        max-width: 100%;
-    }
+@media (max-width: 1500px) and (min-width: 768px) {
+  #header-container {
+    height: 80px;
+  }
 }
