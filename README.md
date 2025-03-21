@@ -61,8 +61,10 @@ Site institucional da ZZ Caça Vazamentos e Desentupidora, especializado em dete
 
 ## Componentes Reutilizáveis
 
-- Mascote Ralph com opções de tamanho, ferramentas e logo
 - Cabeçalho e rodapé injetados via JavaScript
+- Galeria de imagens dinamica
+- Mensagem de alertas dinamica
+- Botão de WhatsApp dinamico e completamente costumizável
 
 ## Como Executar
 
