@@ -10,7 +10,8 @@ Site institucional da ZZ Caça Vazamentos e Desentupidora, especializado em dete
 
 ## Estrutura do Projeto
 
-```├── css/
+```
+├── css/
 │   ├── footer.css        
 │   ├── global.css        
 │   ├── header.css        
