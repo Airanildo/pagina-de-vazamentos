@@ -1,121 +1,165 @@
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caça Vazamento e Desentupidora</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="css/dropdown.css">
-  <link rel="stylesheet" href="css/header.css">
+    <meta charset="UTF-8">
+    <title>ZZ Caça Vazamento e Desentupidora</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <header id="dynamic-header">
+        <div class="header-content">
+            <img src="./assets/logo-pequena-sem-fundo.png" alt="Logo ZZ Caça Vazamento" class="logo-large">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./html/sobre.html">Sobre</a></li>
+                    <li><a href="./html/servicos.html">Serviços</a></li>
+                    <li><a href="./html/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <section class="hero-section" style="background: url('./assets/idoso-vazamento.png') top / cover no-repeat;">
+          <div class="container" style="height: 400px; display: flex; flex-direction: row; justify-content: space-between; margin: -1.5rem 3rem 0 3rem;">
+            <div class="hero-content" style="height: fit-content; background-color: #000000a8; margin-top: 1rem; border-radius: 15px; padding: 2rem; color: white;">
+              <h1>Soluções Profissionais em Vazamentos</h1>
+              <p>Detecção precisa e reparo rápido de vazamentos em residências e empresas</p>
+            </div>
+            <div class="hero-button" style="height: fit-content; margin-top: 2rem;">
+              <a href="https://wa.me/61993342979" class="contact-button">
+                Entrar em contato
+              </a>
+            </div>
+          </div>
+        </section>
 
-  <main class="servicos" style="    background-color: #363435d9; margin: 8rem; padding: 3rem; gap: 3rem; border-radius: 15px;">
-    <div class="servico-card" data-animate="slideRight">
-      <div class="card-text">
-      <h3>🔍 Detecção de Vazamentos</h3>
-      <p>Utilizamos tecnologia de ponta para identificar e resolver vazamentos <span class="destaque">sem quebrar paredes</span>.</p>
-    </div>
-    <img src="assets/vazamento-cano.jpg" alt="Vazamento em tubulação" class="servico-img">
-    </div>
+        <section class="features-section">
+            <div class="container">
+                <h2>Por que nos escolher?</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.5a2 2 0 0 0 2-1.5l2-7.5a2 2 0 0 0-2-2.5h-6.5v5a2 2 0 0 1-2 2v-5a2 2 0 0 1 2-2h6.5L14 4H8v12h3v-5h6.5L14 9z"/>
+                        </svg>
+                        <h3>Rapidez no Atendimento</h3>
+                        <p>Equipe especializada pronta para resolver seu problema em tempo recorde.</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path>
+                            <polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon>
+                        </svg>
+                        <h3>Tecnologia de Ponta</h3>
+                        <p>Utilizamos equipamentos modernos para diagnóstico preciso.</p>
+                    </div>
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <h3>Garantia de Serviço</h3>
+                        <p>Comprometimento total com a satisfação e qualidade do serviço.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="servico-card" data-animate="slideLeft" style="gap: 3rem;">
-      <img src="assets/buraco-chao.jpg" alt="Desentupimento profissional" class="servico-img">
-      <div class="card-text">
-      <h3>🚽 Desentupimento Profissional</h3>
-      <p>Solução imediata para <span class="destaque">esgotos, pias, vasos sanitários e ralos</span>.</p>
+        <section class="recent-services">
+            <div class="container">
+                <h2>Serviços Recentes</h2>
+                <div class="services-showcase">
+                    <div class="service-card scroll-reveal">
+                        <img src="./assets/vazamento-cano.jpg" alt="Vazamento Residencial" style="max-height: 250px; object-fit: cover;">
+                        <div class="service-card-content">
+                            <h3>Vazamento em Residência</h3>
+                            <p>Reparo completo de tubulação de água em casa particular.</p>
+                            <div class="image-description">
+                                <p>Esta imagem mostra um close-up de um vazamento em um cano de cobre, evidenciando a necessidade urgente de reparo. O cano está embutido em terra avermelhada, com água visível escapando de uma junta mal selada.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card scroll-reveal">
+                        <img src="./assets/buraco-chao.jpg" alt="Reparo Comercial" style="max-height: 250px; object-fit: cover;">
+                        <div class="service-card-content">
+                            <h3>Manutenção Comercial</h3>
+                            <p>Recuperação de sistema hidráulico em estabelecimento comercial.</p>
+                            <div class="image-description">
+                                <p>Um técnico está de cabeça para baixo dentro de um buraco no chão, cercado por ferramentas de construção. A cena retrata os desafios práticos e a dedicação necessária para reparos hidráulicos complexos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card scroll-reveal">
+                        <img src="./assets/reparo-relogio.jpg" alt="Consultoria Técnica" style="max-height: 250px; object-fit: cover;">
+                        <div class="service-card-content">
+                            <h3>Consultoria Técnica</h3>
+                            <p>Avaliação preventiva de sistema hidráulico.</p>
+                            <div class="image-description">
+                                <p>A imagem captura um momento de reparo meticuloso. Um técnico de joelhos examina uma seção de tubulação escavada, cercado por ferramentas como um martelo de demolição. O cenário ilustra a precisão e atenção aos detalhes em nossos serviços.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+          <div class="footer-section">
+              <h4>Navegação</h4>
+              <ul>
+                  <li><a href="./html/sobre.html">Sobre</a></li>
+                  <li><a href="./html/servicos.html">Serviços</a></li>
+                  <li><a href="./html/contato.html">Contato</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h4>Contato</h4>
+              <ul>
+                  <li>Telefone: (61) 99334-2979</li>
+                  <li>Email: zzcacavazamento@gmail.com</li>
+                  <li>Endereço: St. N QNN 5 - Ceilândia</li>
+              </ul>
+              <div class="social-media-links">
+                  <a href="https://wa.me/61993342979" target="_blank" class="social-media-icon whatsapp">
+                      <img src="./assets/svg/whatsapp-white.svg" alt="WhatsApp">
+                  </a>
+                  <a href="mailto:zzcacavazamento@gmail.com" class="social-media-icon email">
+                      <img src="./assets/svg/mail-white.svg" alt="Email">
+                  </a>
+                  <a href="https://www.instagram.com/zz_cacavazamento/" target="_blank" class="social-media-icon instagram">
+                      <img src="./assets/svg/instagram-white.svg" alt="Instagram">
+                  </a>
+              </div>
+          </div>
       </div>
-    </div>
-
-    <div class="servico-card" data-animate="slideRight">
-      <div class="card-text">
-      <h3>🛠 Manutenção Preventiva</h3>
-      <p>Evite problemas futuros com nosso <span class="destaque">programa de manutenção periódica</span>.</p>
+      <div class="footer-section" style="margin: 0 11dvw;">
+          <h4>Localização</h4>
+          <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.953363925187!2d-48.110497!3d-15.794234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcbae4a26a!2sQNN%205%2C%20Ceil%C3%A2ndia%20-%20DF%2C%2072225-053!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+              width="100%" 
+              height="200" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+          </iframe>
       </div>
-      <img src="assets/reparo-relogio.jpg" alt="Manutenção preventiva" class="servico-img">
-    </div>
-  </main>
-
-  <!-- <section class="contato">
-    <div class="contato-info" data-animate="zoomIn">
-      <img src="assets/banner-informacoes.jpg" alt="Informações de contato">
-    </div>
-  </section> -->
-
-  <div class="gallery">
-    <img src="assets/chefe-close.jpg" alt="Equipe em ação" data-animate="zoomIn">
-    <img src="assets/chefe-close-2.jpg" alt="Técnico especializado" data-animate="zoomIn">
-    <img src="assets/foto-logo.jpg" alt="Nossa equipe" data-animate="zoomIn">
-  </div>
-
-  <section class="parallax-img" 
-           style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/logo.jpg')"
-           data-parallax="0.6"
-           data-parallax-direction="horizontal">
-    <div class="parallax-content">
-      <h3 data-animate="slideRight" style="color: var(--amarelo)">Trabalho Preciso e Garantido</h3>
-      <p data-animate="slideLeft" style="color: var(--branco); font-weight: bold">Equipe especializada em soluções definitivas</p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Redes Sociais</h4>
-        <div class="social-icons">
-          <a href="https://www.instagram.com/zz_cacavazamento/">
-            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </a>
-          <!-- <a href="#">
-            <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
-          </a> -->
-          <a href="https://wa.me/61993342979">
-            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-        </a>
-      </div>
-    </div>
-
-    <div class="footer-section">
-      <h4>Endereço</h4>
-      <p>St. N QNN 5<br>
-      Ceilândia,<br>
-      Brasília - DF</p>
-      <h5>72225-053</h5>
-    </div>
-
-
-    <div class="footer-section">
-      <h4>Contato</h4>
-      <ul>
-        <li><a href="tel:+5561993342979"> (61) 99334-2979</a></li>
-        <li><a href="#"><span class="__cf_email__">zzcacavazamento@gmail.com<span></a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section">
-      <h4>Destaques</h4>
-      <ul>
-        <li><a href="./html/sobre.html">Sobre</a></li>
-        <li><a href="./html/servicos.html">Serviços</a></li>
-        <li><a href="./html/contato.html">Contatos</a></li>
-        <li><a href="./html/video-inspecao.html">Videos de Serviços</a></li>
-      </ul>
-    </div>
   </div>
 </footer>
 
-  <a href="https://wa.me/61993342979" target="_blank" class="whatsapp-btn">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-    Chamar no WhatsApp
-  </a>
+    <!-- WhatsApp Fixed Button -->
+    <a href="https://wa.me/61993342979" target="_blank" class="whatsapp-fixed-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="white">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.149-.173.198-.297.297-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+    </a>
 
-  <script src="animacoes.js"></script>
-  <script src="header.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script src="./js/scroll-reveal.js"></script>
+    <script src="./js/breadcumbs.js"></script>
+</body>
 </body>
 </html>
