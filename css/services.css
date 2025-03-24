@@ -1,0 +1,202 @@
+/* Services Section Styles */
+.services {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.services-title-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-title {
+  font-size: 2rem;
+  color: var(--color-azul-zz);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.services-description {
+  max-width: 48rem;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Service Card */
+.service-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-image {
+  height: 12rem;
+  background-color: #eee;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-image-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.service-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-dourado);
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Service Features List */
+.service-features {
+  margin-bottom: 1.5rem;
+}
+
+.service-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-feature-icon {
+  color: var(--color-azul-zz);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.service-feature-text {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Service Button */
+.service-action {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.service-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-azul-zz);
+  color: white;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: var(--color-azul-escuro);
+}
+
+/* Emergency Box */
+.emergency-box {
+  margin-top: 3rem;
+  background-color: #ffebee;
+  border-left: 0.25rem solid #f44336;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.emergency-box a {
+  width: 18dvw;
+}
+
+.emergency-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.emergency-text {
+  text-align: center;
+}
+
+.emergency-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d32f2f;
+  margin-bottom: 0.5rem;
+}
+
+.emergency-description {
+  color: #555;
+  font-size: 1rem;
+}
+
+.emergency-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-whatsapp);
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition: transform 0.3s ease;
+}
+.emergency-button i {
+  font-size: 20px;
+}
+
+.emergency-button:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .services-title {
+    font-size: 2.5rem;
+  }
+
+  .emergency-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .emergency-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

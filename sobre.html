@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - ZZ Caça Vazamentos e Desentupidora</title>
+  <meta name="description" content="Conheça a história e a equipe da ZZ Caça Vazamentos e Desentupidora. Empresa especializada em detecção de vazamentos e serviços de desentupimento em Brasília-DF.">
+
+  <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/whatsapp-button.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <style>
+    /* Estilos específicos da página */
+    .page-header {
+      background-color: var(--color-azul-zz);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .page-title {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-description {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .about-section {
+      padding: 3rem 0;
+    }
+
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .about-card {
+      background-color: #fff;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .about-card-content {
+      padding: 2rem;
+    }
+
+    .about-card-title {
+      font-size: 1.75rem;
+      color: var(--color-dourado);
+      margin-bottom: 1rem;
+    }
+
+    .about-card-text {
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .about-image-container {
+      height: 300px;
+      background-color: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .team-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #eee;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .team-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-azul-zz);
+      margin-bottom: 0.5rem;
+    }
+
+    .team-role {
+      color: var(--color-dourado);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-bio {
+      color: #444;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .values-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .value-card {
+      background-color: #f8f9fa;
+      border-left: 4px solid var(--color-dourado);
+      padding: 1.5rem;
+      border-radius: 0.25rem;
+    }
+
+    .value-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-azul-zz);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .value-title i {
+      margin-right: 0.75rem;
+      color: var(--color-dourado);
+    }
+
+    .value-description {
+      color: #555;
+      line-height: 1.5;
+    }
+
+
+    /* Responsividade */
+    @media (min-width: 768px) {
+      .team-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .values-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .team-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .values-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Container Header -->
+  <div id="header-container"></div>
+
+  <main>
+    <!-- Cabeçalho página -->
+    <header class="page-header">
+      <div class="container">
+        <h1 class="page-title">Sobre a ZZ Caça Vazamentos</h1>
+        <p class="page-description">
+          Conheça nossa história, equipe e valores que nos tornam referência em serviços hidráulicos em Brasília e região.
+        </p>
+      </div>
+    </header>
+
+    <!-- Sessão informativa -->
+    <section class="about-section">
+      <div class="container about-container">
+        <!-- Nossa história -->
+        <div class="about-card">
+          <div class="about-image-container">
+            Foto da Empresa
+          </div>
+          <div class="about-card-content">
+            <h2 class="about-card-title">Nossa História</h2>
+            <p class="about-card-text">
+              A ZZ Caça Vazamentos nasceu da necessidade de oferecer serviços especializados em detecção de vazamentos de forma não invasiva na região de Brasília. Fundada há mais de 10 anos, nossa empresa começou com uma pequena equipe e, graças à qualidade do trabalho e atendimento, cresceu para se tornar referência no mercado.
+            </p>
+            <p class="about-card-text">
+              Investimos constantemente em equipamentos de última geração e no treinamento de nossa equipe para garantir que possamos oferecer as melhores soluções em detecção de vazamentos, desentupimentos e serviços hidráulicos em geral.
+            </p>
+            <p class="about-card-text">
+              O mascote Ralph, inspirado no Detona Ralph, surgiu como símbolo da nossa força e eficiência no combate aos vazamentos e problemas hidráulicos, tornando-se parte importante da nossa identidade visual.
+            </p>
+          </div>
+        </div>
+
+        <!-- Nosso time -->
+        <div class="about-card">
+          <div class="about-card-content">
+            <h2 class="about-card-title">Nossa Equipe</h2>
+            <p class="about-card-text">
+              Contamos com profissionais qualificados e experientes, todos treinados nas mais modernas técnicas de detecção de vazamentos e desentupimento. Nossos técnicos são regularmente capacitados e atualizados para oferecer o melhor serviço possível.
+            </p>
+
+            <div class="team-container">
+              <div class="team-member">
+                <div class="team-photo">
+                  Foto do Técnico
+                </div>
+                <h3 class="team-name">Carlos Silva</h3>
+                <p class="team-role">Especialista em Caça Vazamentos</p>
+                <p class="team-bio">
+                  Mais de 15 anos de experiência em detecção de vazamentos ocultos, utilizando geofone eletrônico e câmeras termográficas.
+                </p>
+              </div>
+
+              <div class="team-member">
+                <div class="team-photo">
+                  Foto do Técnico
+                </div>
+                <h3 class="team-name">Pedro Santos</h3>
+                <p class="team-role">Técnico em Desentupimento</p>
+                <p class="team-bio">
+                  Especialista em desobstrução de tubulações e limpeza de caixas de gordura, com 10 anos de experiência no setor.
+                </p>
+              </div>
+
+              <div class="team-member">
+                <div class="team-photo">
+                  Foto da Técnica
+                </div>
+                <h3 class="team-name">Mariana Costa</h3>
+                <p class="team-role">Atendimento ao Cliente</p>
+                <p class="team-bio">
+                  Responsável pelo agendamento e acompanhamento dos serviços, garantindo a satisfação total dos nossos clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nosso valores -->
+        <div class="about-card">
+          <div class="about-card-content">
+            <h2 class="about-card-title">Nossos Valores</h2>
+            <p class="about-card-text">
+              A ZZ Caça Vazamentos baseia seu trabalho em valores sólidos que garantem a qualidade dos nossos serviços e a satisfação dos nossos clientes.
+            </p>
+
+            <div class="values-container">
+              <div class="value-card">
+                <h3 class="value-title">
+                  <i class="fas fa-star"></i>
+                  Excelência
+                </h3>
+                <p class="value-description">
+                  Buscamos a excelência em cada serviço realizado, utilizando as melhores técnicas e equipamentos disponíveis no mercado.
+                </p>
+              </div>
+
+              <div class="value-card">
+                <h3 class="value-title">
+                  <i class="fas fa-handshake"></i>
+                  Comprometimento
+                </h3>
+                <p class="value-description">
+                  Assumimos o compromisso com prazos e resultados, trabalhando sempre para superar as expectativas dos nossos clientes.
+                </p>
+              </div>
+
+              <div class="value-card">
+                <h3 class="value-title">
+                  <i class="fas fa-shield-alt"></i>
+                  Confiança
+                </h3>
+                <p class="value-description">
+                  Cultivamos a confiança em nossos relacionamentos, sendo transparentes em todas as etapas do serviço.
+                </p>
+              </div>
+
+              <div class="value-card">
+                <h3 class="value-title">
+                  <i class="fas fa-recycle"></i>
+                  Sustentabilidade
+                </h3>
+                <p class="value-description">
+                  Adotamos práticas sustentáveis, buscando minimizar o impacto ambiental em nossos processos e operações.
+                </p>
+              </div>
+
+              <div class="value-card">
+                <h3 class="value-title">
+                  <i class="fas fa-users"></i>
+                  Trabalho em Equipe
+                </h3>
+                <p class="value-description">
+                  Acreditamos no poder do trabalho em equipe, valorizando a contribuição de cada membro para o sucesso do todo.
+                </p>
+              </div>
+
+              <div class="value-card">
+                <h3 class="value-title">
+                  <i class="fas fa-lightbulb"></i>
+                  Inovação
+                </h3>
+                <p class="value-description">
+                  Buscamos constantemente por novas tecnologias e métodos para melhorar nossos serviços e processos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Container do Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/61993342979" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+    <span class="sr-only">Contato via WhatsApp</span>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="./js/header.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/whatsapp-button.js"></script>
+</body>
+</html>

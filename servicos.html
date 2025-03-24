@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços - ZZ Caça Vazamentos e Desentupidora</title>
+  <meta name="description" content="Conheça os serviços especializados da ZZ Caça Vazamentos e Desentupidora em Brasília-DF. Detecção de vazamentos, desentupimento e serviços hidráulicos.">
+
+  <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/services.css">
+  <link rel="stylesheet" href="./css/whatsapp-button.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <style>
+    /* Estilos específios da página */
+    .page-header {
+      background-color: var(--color-azul-zz);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .page-title {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-description {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .service-detail {
+      padding: 4rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .service-detail:last-child {
+      border-bottom: none;
+    }
+
+    .service-detail-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .service-detail-content {
+      flex: 1;
+    }
+
+    .service-detail-title {
+      font-size: 1.75rem;
+      color: var(--color-dourado);
+      margin-bottom: 1rem;
+    }
+
+    .service-detail-description {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .service-detail-image {
+      flex: 1;
+      max-width: 100%;
+      height: 300px;
+      background-color: #eee;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .service-detail-features {
+      margin-bottom: 1.5rem;
+    }
+
+    .service-detail-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-detail-feature-icon {
+      color: var(--color-azul-zz);
+      margin-top: 0.25rem;
+      flex-shrink: 0;
+    }
+
+    .service-detail-cta {
+      margin-top: 1.5rem;
+    }
+
+    /* Responsividade específica da página */
+    @media (min-width: 768px) {
+      .service-detail-wrapper {
+        flex-direction: row;
+      }
+
+      .service-detail:nth-child(even) .service-detail-wrapper {
+        flex-direction: row-reverse;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Container do Header -->
+  <div id="header-container"></div>
+
+  <main>
+    <!-- Cabeçalho da página -->
+    <header class="page-header">
+      <div class="container">
+        <h1 class="page-title">Nossos Serviços</h1>
+        <p class="page-description">
+          Conheça os serviços especializados da ZZ Caça Vazamentos. Trabalhamos com as mais avançadas tecnologias para solucionar seus problemas hidráulicos.
+        </p>
+      </div>
+    </header>
+
+    <!-- Detalhes sobre os serviços -->
+    <section class="service-detail">
+      <div class="container">
+        <div class="service-detail-wrapper">
+          <div class="service-detail-content">
+            <h2 class="service-detail-title">Caça Vazamentos com Tecnologia</h2>
+            <p class="service-detail-description">
+              Localizamos vazamentos ocultos em paredes, lajes, pisos e tubulações usando equipamentos de última geração, sem necessidade de quebradeira. Nossa tecnologia permite identificar com precisão o local exato do vazamento,
+              economizando tempo e evitando destruição desnecessária do seu imóvel.
+            </p>
+
+            <div class="service-detail-features">
+              <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--color-azul-zz);">Como trabalhamos:</h3>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Detecção com geofone eletrônico de alta sensibilidade</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Câmeras termográficas para identificação de umidade em paredes</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Testes de pressão para verificar tubulações</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Traçadores específicos para identificar vazamentos em caixas d'água</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Reparo rápido e eficiente após a localização</span>
+              </div>
+            </div>
+
+            <div class="service-detail-cta">
+              <a href="https://wa.me/61993342979" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i>
+                Solicitar Orçamento
+              </a>
+            </div>
+          </div>
+
+          <div class="service-detail-image">
+            Caça Vazamentos
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detalher sobre o serviço: Desentupimento -->
+    <section class="service-detail">
+      <div class="container">
+        <div class="service-detail-wrapper">
+          <div class="service-detail-content">
+            <h2 class="service-detail-title">Desentupimento Profissional</h2>
+            <p class="service-detail-description">
+              Realizamos o desentupimento de pias, ralos, vasos sanitários, tubulações e redes de esgoto com equipamentos especializados. Nossos profissionais são treinados para resolver desde problemas simples até casos mais complexos,
+              sempre com rapidez e eficiência.
+            </p>
+
+            <div class="service-detail-features">
+              <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--color-azul-zz);">Tipos de desentupimento:</h3>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Desentupimento de pias, ralos e vasos sanitários</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Limpeza de caixas de gordura e caixas de inspeção</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Hidrojateamento para tubulações de esgoto</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Desobstrução de redes de águas pluviais</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Filmagem interna de tubulações para identificar obstruções</span>
+              </div>
+            </div>
+
+            <div class="service-detail-cta">
+              <a href="https://wa.me/61993342979" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i>
+                Solicitar Orçamento
+              </a>
+            </div>
+          </div>
+
+          <div class="service-detail-image">
+            Desentupimento
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detalher sobre os serviços: Hidraulica -->
+    <section class="service-detail">
+      <div class="container">
+        <div class="service-detail-wrapper">
+          <div class="service-detail-content">
+            <h2 class="service-detail-title">Serviços Hidráulicos</h2>
+            <p class="service-detail-description">
+              Oferecemos uma ampla gama de serviços hidráulicos, desde pequenos reparos até instalações completas. Nossa equipe de bombeiros hidráulicos qualificados realiza trabalhos com garantia de qualidade e durabilidade.
+            </p>
+
+            <div class="service-detail-features">
+              <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--color-azul-zz);">Serviços disponíveis:</h3>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Conserto e troca de válvulas de descarga</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Lavagem e limpeza de caixas d'água e cisternas</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Troca de encanamentos e tubulações</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Instalação de louças e metais sanitários</span>
+              </div>
+
+              <div class="service-detail-feature">
+                <i class="fas fa-check-circle service-detail-feature-icon"></i>
+                <span>Manutenção preventiva em sistemas hidráulicos</span>
+              </div>
+            </div>
+
+            <div class="service-detail-cta">
+              <a href="https://wa.me/61993342979" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i>
+                Solicitar Orçamento
+              </a>
+            </div>
+          </div>
+
+          <div class="service-detail-image">
+            Serviços Hidráulicos
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão de emergência -->
+    <section style="background-color: #ffebee; padding: 3rem 0;">
+      <div class="container">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+          <div style="margin-bottom: 1.5rem;">
+          </div>
+
+          <h2 style="font-size: 2rem; color: #d32f2f; margin-bottom: 1rem;">Emergência Hidráulica?</h2>
+          <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #444;">
+            Para situações urgentes como vazamentos graves ou entupimentos que não podem esperar, contamos com serviço de atendimento emergencial. Entre em contato imediatamente!
+          </p>
+
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://wa.me/61993342979" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="display: flex; align-items: center;">
+              <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i>
+              WhatsApp: (61) 99334-2979
+            </a>
+
+            <a href="tel:+6135812873" class="btn btn-secondary" style="display: flex; align-items: center;">
+              <i class="fas fa-phone" style="margin-right: 0.5rem;"></i>
+              Telefone: (61) 3581-2873
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Container do Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/61993342979" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+    <span class="sr-only">Contato via WhatsApp</span>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="./js/header.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/whatsapp-button.js"></script>
+</body>
+</html>

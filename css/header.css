@@ -1,0 +1,176 @@
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-container {
+  height: 90px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+a.small-logo img {
+  width: auto;
+  height: 8dvh;
+}
+
+.logo-img-container {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-dourado);
+  letter-spacing: 0.1em;
+}
+
+.logo-subtitle {
+  font-size: 0.7rem;
+  color: #666;
+}
+
+/* Navigation */
+.nav {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  font-weight: 500;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: var(--color-dourado);
+}
+
+/* Contact Icons */
+.contact-icons {
+  display: none;
+  gap: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+}
+
+.contact-icon.whatsapp {
+  color: var(--color-whatsapp);
+}
+
+.contact-icon.phone {
+  color: var(--color-azul-zz);
+}
+
+.contact-icon.instagram {
+  color: #C13584;
+}
+
+/* Mobile Menu */
+.mobile-menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #444;
+  font-size: 1.5rem;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-contact {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mobile-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.mobile-contact-item.whatsapp {
+  color: var(--color-whatsapp);
+}
+
+.mobile-contact-item.phone {
+  color: var(--color-azul-zz);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+
+  .contact-icons {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+  }
+}
