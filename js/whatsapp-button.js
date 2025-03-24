@@ -41,7 +41,7 @@ function createWhatsAppButton(phoneNumber, message = '') {
 function addWhatsAppButton(options = {}) {
   const {
     phoneNumber = '61993342979',
-    message = '',
+    message = 'Olá! Gostaria de mais informações sobre os serviços da Zz Caça Vazamentos.',
     position = 'bottom-right',
     pulse = false
   } = options;
@@ -79,9 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Verifica se já existe um botão do WhatsApp com a classe 'whatsapp-float'
   if (!document.querySelector('.whatsapp-float')) {
     addWhatsAppButton({
-      phoneNumber: '61993342979',
-      message: 'Olá! Gostaria de obter mais informações sobre os serviços da ZZ Caça Vazamentos.',
-      pulse: true
     });
   }
 });
